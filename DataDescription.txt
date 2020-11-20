@@ -8,11 +8,12 @@ curClickNumber = the current number of the squares that user have clicked
 expectMaxClickNumber = the max number of the squares that user should click
 
 ptsot_results
+participant ID is stored in the file name, not in the file
 header is missing: add header
-partID, objects, correct_angle, user_angle
+questionNumber, correctResponseAngle, ActuallyResponseAngle, AbsoluteAngularError
 
 sbsod
-partID is stored in the file name, not in the file
+participant ID is stored in the file name, not in the file
 QuestionID: the id of the questions. in total 15 questions
 questionContent: the question presented to the participant
 ParticipantAnswer: 1-7 likert scale 
