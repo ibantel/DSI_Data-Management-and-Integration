@@ -1,0 +1,24 @@
+Data description:
+detailed_subj_01
+UserId: participant ID
+Correct: 1 = correct, 0 = wrong
+userAnswer= the answer user provided (the numbers indicates the labels of the squares)
+expectAnswer = the answer that is expected from the user (correct answer) (the numbers indicates the labels of the squares)
+curClickNumber = the current number of the squares that user have clicked 
+expectMaxClickNumber = the max number of the squares that user should click
+
+ptsot_results
+header is missing: add header
+partID, objects, correct_angle, user_angle
+
+sbsod
+partID is stored in the file name, not in the file
+QuestionID: the id of the questions. in total 15 questions
+questionContent: the question presented to the participant
+ParticipantAnswer: 1-7 likert scale 
+
+UnityDataSave
+City_mapLMs, StandingAt, LookingAt, LandmarkToMove are the content of the questions. you can ignore them
+CorrectAngle: the correct angle 
+ResponseInDegrees: participants' answer
+ResponseErrorAbs: the absolute error between the correct angle and participants' answer
