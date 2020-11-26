@@ -1,0 +1,48 @@
+\ProvidesPackage{Z_costumpreamble2}
+
+\usepackage[sc]{mathpazo}
+\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[ddmmyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEDAY}.\twodigit{\THEMONTH}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newsavebox{\THURSDAY}\savebox{\THURSDAY}{Thu}% Thu
+
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1 \quad (\syldate{\today}) \quad}% - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\THURSDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+
+\renewcommand{\dateseparator}{.} % adjust date separation
+
+
+\newcommand{\topic}[1]{\quad \textit{\textbf{#1}}}
+\newcommand{\location}[1]{\quad \textit{\textbf{#1}} \quad}
+
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+%\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+
+
+%%%%% To use automatically calculated weeks:
+% Set first date of the semester (for some reason this is a week before what comes up, but that's easy to get around)
+% \SetDate[10/09/2020]
+%\week{Week 01} \location{in person} \-\hspace{-.5cm} \topic{Topic 01}

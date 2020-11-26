@@ -1,0 +1,25 @@
+\ProvidesPackage{Z_costumpreamble3}
+
+\usepackage{tikz}
+
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks, % redefines links' color and frame settings
+	breaklinks,
+	linkcolor={blue!50!black},
+	anchorcolor={blue!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!50!black}}
+	
+% biblatex definitions
+%\renewcommand*{\postnotedelim}{\addcolon\space}%\renewcommand*{\postnotedelim}{\addcolon\space}
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
+% other definitions
+\emergencystretch=1em % add "emergency white space" to prevent overfull boxes https://tex.stackexchange.com/a/172000/195819
