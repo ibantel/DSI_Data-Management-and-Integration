@@ -18,7 +18,8 @@ QuestionID: the id of the questions. in total 15 questions
 questionContent: the question presented to the participant
 ParticipantAnswer: 1-7 likert scale 
 
-UnityDataSave
+UnityDataSave: JRD & Route_Test
+participant ID: the column of "partID" 
 City_mapLMs, StandingAt, LookingAt, LandmarkToMove are the content of the questions. you can ignore them
 CorrectAngle: the correct angle 
 ResponseInDegrees: participants' answer
