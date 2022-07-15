@@ -2,6 +2,8 @@
 
 This repository contains work done as a group project for an interdisciplinary course on data management and integration.
 
+The project reads different data sets and saves them to a relational data base that can be queried with SQL.
+
 The repository contains:
 - `data_raw` - contains the raw data files on which the analysis is based
 - `DataDescription.txt` - details the structure of the data
