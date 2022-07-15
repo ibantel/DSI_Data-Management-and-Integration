@@ -1,4 +1,4 @@
-# Group project in `Data management and integration`
+# Group project in "Data management and integration"
 
 This repository contains work done as a group project for an interdisciplinary course on data management and integration.
 
